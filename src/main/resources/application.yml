@@ -1,0 +1,11 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.100:8761/eureka/
+  instance:
+    hostname: product.snsprj.com
+
+spring:
+  application:
+    name: eureka_client_product
+
