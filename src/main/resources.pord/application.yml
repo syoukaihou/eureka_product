@@ -1,0 +1,20 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.100:8761/eureka/
+  instance:
+    hostname: product.snsprj.com
+
+spring:
+  application:
+    name: eureka_client_product
+  datasource:
+    url: jdbc:mysql://192.168.0.100:3306/db_product?useUnicode=true&characterEncoding=UTF-8
+    username: foo
+    password: foo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#配置mybatis
+mybatis:
+  type-aliases-package: com.snsprj.eureka_product.model
+  mapper-locations: classpath:com/snsprj/eureka_product/mapper/*.xml

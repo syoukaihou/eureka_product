@@ -1,4 +1,4 @@
-package com.snsprj.eureka_product;
+package com.snsprj;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
